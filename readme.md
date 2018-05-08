@@ -29,6 +29,17 @@ Decent combines all of the necessary parts of Scuttlebot for a simpler install p
 
 Navigate to http://localhost:3001/ to see your Decent.
 
+### Install Decent using Docker
+
+```
+% git clone http://github.com/evbogue/decent.git
+% cd decent
+% docker build -f Dockerfile -t decent:latest .
+% docker run -v /dir/host:/home/node/ -p 3333:3333 -p 3001:3939 decent 
+```
+
+Navigate to http://localhost:3001/ to see your Decent.
+
 ### Embed Decent on your website
 
 ```
