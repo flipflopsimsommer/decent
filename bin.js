@@ -5,6 +5,7 @@ var stringify = require('pull-stringify')
 var yargs = require('yargs').argv
 var open = require('opn')
 var muxrpcli = require('muxrpcli')
+var explain = require('explain-error')
 
 var config = require('./config/inject')(yargs.appname || 'decent')
 
